@@ -1,0 +1,30 @@
+.nav 
+{ 
+   background-color:  #a590b1;
+   font-color:#454561  ;
+   list-style: none;
+   text-align: center;
+   padding: 20px 0;
+   margin: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 17px;
+}
+
+.nav > li {
+    display: inline-block;
+     margin: 0 15px;
+  padding: 10px 20px;
+  border: 2px solid #454561;  
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color:#454561;  
+    font-weight: bold;
+    padding: 20px 50px;
+    display: inline-block;
+}
+
+ .nav > li > a:hover {
+    color: #c3bcbd ;
+}
