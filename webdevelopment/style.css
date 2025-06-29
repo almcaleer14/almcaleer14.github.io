@@ -1,1 +1,7 @@
-h1 {color: #454561;}
+.h1 {color: #454561;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding-left: 20px;
+padding-right: 20px;}
+
+.h2 {color:#0d0d61;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
