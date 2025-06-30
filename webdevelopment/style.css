@@ -1,7 +1,109 @@
-.h1 {color: #454561;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-padding-left: 20px;
-padding-right: 20px;}
+.body {
+    background-color:#c3bcbd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-.h2 {color:#0d0d61;
+
+.h1 { color: #0D0D61;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+font-weight: bolder;
+font-size: 70px;
+ display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #c3bcbd ;
+    border-radius: 15px;}
+
+.h2 { color:#454561;
+    text-align: center;
+    display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #a590b1 ;
+    border-radius: 15px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+.h3 {color: #454561;
+    text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #a590b1 ;
+    border-radius: 15px;
+}
+
+.section {text-align: center;}
+
+.ul {text-align: center;
+text-decoration: none;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 16px;
+text-decoration-line: none;
+list-style: none;
+margin-bottom: 50px;
+}
+
+ul > li {margin-bottom: 5px;
+color: #454561;
+text-decoration: none;}
+
+ul > li > a {text-decoration: none;
+    text-align: center;
+color: #333366;
+}
+
+    a:hover {
+  color: #000000;            
+  text-decoration: underline; }
+
+.p {
+    text-align: center;
+    color: #454561;
+    display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #a590b1 ;
+    border-radius: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+.intro::first-letter {
+    font-style: italic;
+  font-weight: bolder;
+  float: left;
+  padding-right: 5px;
+  font-size: 200%;
+
+  
+}
+.intro {display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #a590b1 ;
+    border-radius: 15px;}
+
+.p2 {
+    text-indent: 40px;
+    display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #a590b1 ;
+    border-radius: 15px;
+}
+
+.p {
+    text-indent: 40px;
+    display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #a590b1 ;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
