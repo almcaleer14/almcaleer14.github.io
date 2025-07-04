@@ -1,5 +1,5 @@
 .body {
-    background-color:#c3bcbd;
+    background-color:#a590b1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -12,8 +12,8 @@ font-size: 70px;
  display: block;
     padding: 10px 20px;
     margin: 20px auto;
-    background-color: #c3bcbd ;
-    border-radius: 15px;}
+    border-radius: 15px;
+width: fit-content;}
 
 .h2 { color:#454561;
     text-align: center;
@@ -34,7 +34,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     border-radius: 15px;
 }
 
-.section {text-align: center;}
+
 
 .ul {text-align: center;
 text-decoration: none;
@@ -83,25 +83,45 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     background-color: #a590b1 ;
     border-radius: 15px;}
 
-.p2 {
+.textbox {
     text-indent: 40px;
     display: block;
     padding: 10px 20px;
     margin: 20px auto;
-    background-color: #a590b1 ;
+    background-color: #c3bcbd ;
     border-radius: 15px;
+    width: 400px; height: auto ;
+    text-align: left;
+    overflow: auto;
+  
 }
 
-.p {
-    text-indent: 40px;
+.flex-container {display: flex;           
+  gap: 20px;               
+  align-items: center;        
+  justify-content: center;    
+  margin-top: 40px;
+  flex-wrap: wrap;
+margin-top: auto; }
+
+.img {width:300px;
+height: 300px;
+object-fit: cover;
+border-radius: 20px;}
+
+.quotes {
     display: block;
-    padding: 10px 20px;
+    padding:20px;
     margin: 20px auto;
-    background-color: #a590b1 ;
     border-radius: 15px;
-}
+font-size: 20px;
+font-weight: bolder;
+text-align: left;
+margin: 0;}
 
-
+.quote-box {max-width: 400px;
+padding: 10px;
+background-color: #c3bcbd; border-radius: 15px;}
 
 
 
