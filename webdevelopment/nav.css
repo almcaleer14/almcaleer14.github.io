@@ -131,4 +131,13 @@ header ul li {display: block;}
 
 header ul li ul {width: 100%;
 z-index: 1;}
+
+.dropdown-menu {display: none; flex-direction: column; width: 100%;}
+
+}
+
+.hamburger-icon {
+  font-size: 30px;
+  cursor: pointer;
+    padding: 10px;
 }

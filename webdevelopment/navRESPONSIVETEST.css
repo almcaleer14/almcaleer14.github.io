@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+     padding: 0;
+    margin: 0;
+}
+.body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 16px;
+}
+.nav {
+    background-color: #a590b1;
+    padding: 0 15px;
+}
+
+a {
+    color: #454545;
+    text-decoration: none;
+}
+.menu,
+.submenu {
+    list-style-type: none;
+}
+.logo {font-size: 20px;
+padding: 7.5px 10px 7.5px 0px;}
+
+.item {padding: 10px;
+}
+
+.item a:hover, 
+.item a:hover::after {
+    color: #ccc;
+}
+
+/* Mobile Menu */
+.menu {
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu.active {
+    display: flex;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.menu li.subitem a {
+    padding: 15px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    background: #a590b1;
+}
+
+.item.button {order: 2;}
+
+.item {order: 3;
+width: 100%;
+text-align: center;
+display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+/*submenus*/
+.submenu {
+    display: none; 
+    padding-left: 20px;
+}
+
+.submenu-active .submenu {
+    display: block;
+}
+
+.has-submenu > a::after {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: " <i class="fa-solid fa-caret-down"></i>";
+    padding-left: 5px;
+}
+.subitem a {
+    padding: 10px 15px;
+
+}
+
+.submenu-active {
+    background-color: #111;
+    border-radius: 3px;
+}
+
+.item.submenu-active .submenu {
+    display: block;
+}
+
+
