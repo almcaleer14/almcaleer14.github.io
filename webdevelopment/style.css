@@ -90,10 +90,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     margin: 20px auto;
     background-color: #c3bcbd ;
     border-radius: 15px;
-    width: 400px; height: auto ;
+    width: 500px; height: auto ;
     text-align: left;
-    overflow: auto;
-  
+    overflow:auto;
+    text-wrap: wrap;
 }
 
 .flex-container {display: flex;           
@@ -102,7 +102,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   justify-content: center;    
   margin-top: 40px;
   flex-wrap: wrap;
-margin-top: auto; }
+margin-top: auto;
+width: auto;
+
+}
 
 .img {width:300px;
 height: 300px;
@@ -114,14 +117,16 @@ border-radius: 20px;}
     padding:20px;
     margin: 20px auto;
     border-radius: 15px;
-font-size: 20px;
+font-size: 18px;
 font-weight: bolder;
 text-align: left;
 margin: 0;}
 
-.quote-box {max-width: 400px;
+.quote-box {max-width: 420px;
 padding: 10px;
-background-color: #c3bcbd; border-radius: 15px;}
+background-color: #c3bcbd; border-radius: 15px;
+text-wrap: wrap;
+overflow: auto;}
 
 @media screen and (max-width:640px) {
     .container {width: 100%;}

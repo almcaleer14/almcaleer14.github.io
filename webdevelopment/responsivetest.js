@@ -3,8 +3,8 @@ const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
 
 function toggleMenu(e) {
-  e.preventDefault(); // stops link jump
-  menu.classList.toggle('active'); // show/hide menu
+  e.preventDefault(); 
+  menu.classList.toggle('active'); 
   const icon = toggle.querySelector('i');
 
   if (menu.classList.contains('active')) {
@@ -25,7 +25,7 @@ function toggleItem() {
   if (this.classList.contains("submenu-active")) {
     this.classList.remove("submenu-active");
   } else {
-    // close other open submenus
+    
     items.forEach(item => item.classList.remove("submenu-active"));
     this.classList.add("submenu-active");
   }
