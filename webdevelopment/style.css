@@ -15,13 +15,13 @@ font-size: 70px;
     border-radius: 15px;
 width: fit-content;}
 
-.h2 { color:#454561;
+.h2 { color:black;
     text-align: center;
     display: block;
     padding: 10px 20px;
     margin: 20px auto;
-    background-color: #a590b1 ;
     border-radius: 15px;
+    font-weight: bolder;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 
 .h3 {color: #454561;
@@ -44,6 +44,10 @@ text-decoration-line: none;
 list-style: none;
 margin-bottom: 50px;
 }
+li {color: #454561;
+font-weight: bold;
+text-align: none;
+text-decoration: none;}
 
 ul > li {margin-bottom: 5px;
 color: #454561;
@@ -52,6 +56,7 @@ text-decoration: none;}
 ul > li > a {text-decoration: none;
     text-align: center;
 color: #333366;
+text-decoration-line: none;
 }
 
     a:hover {
@@ -67,6 +72,9 @@ color: #333366;
     background-color: #a590b1 ;
     border-radius: 15px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.p2 {text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: ;}
 
 .intro::first-letter {
     font-style: italic;
