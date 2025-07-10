@@ -1,139 +1,160 @@
+/* ---------- Global Styles ---------- */
 * {
-    box-sizing: border-box;
-     padding: 0;
-    margin: 0;
-}
-.body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 16px;
-}
-.nav {
-    background-color: #a590b1;
-    padding: 0 15px;
+  box-sizing: border-box;
 }
 
-a {
-    color: #454545;
-    text-decoration: none;
-}
-.menu,
-.submenu {
-    list-style-type: none;
-}
-.logo {font-size: 18px;
-padding: 7.5px 10px 7.5px 0px;}
-
-.item {padding: 10px;
-    display: none;
+body {
+  margin: 5px;
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #a590b1;
 }
 
-.item.button{
-    padding: 9px 5px;
+/* ---------- Navigation Base Styles ---------- */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #454561;
+  padding: 5px 5px;
 }
 
-.item:not(.button, .logo) a:hover,
-.item a:hover::after {
-    color: #ccc;
+/* Hide the menu toggle checkbox */
+#menu-toggle {
+  display: none;
 }
 
-/* Mobile Menu */
+/* Hamburger icon */
+.toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Main menu list */
 .menu {
-    display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-size: 18px;
+  padding-left: 100px;
 }
 
-.menu.active {
-    display: flex;
+/* Menu items */
+.menu li {
+  position: relative;
+  padding: 15px;
 }
+
 .menu li a {
-    display: block;
-    padding: 15px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  color: white;
 }
 
-.menu li.subitem a {
-    padding: 15px;
+.menu li a:hover {
+  background-color: #c3bcbd;
+  border-radius: 1px;
 }
 
-.toggle {
-    order: 1;
-    font-size: 20px;
-    cursor: pointer;
-    display: block;
-    padding: 10px;
-    background: #a590b1;
+
+
+/* ---------- Dropdown Menu ---------- */
+
+.dropdown {
+  display: flex;
 }
 
-.item.button {order: 2;}
-
-.item {order: 3;
-width: 100%;
-text-align: center;
-display: none;
-}
-
-.active .item {
-    display: block;
-}
-
-/*submenus*/
+.dropdownarrow {display: none; position: relative;}
+.checkbox:checked {display: none;}
 .submenu {
-    display: none; 
-    padding-left: 20px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #c3bcbd;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 150px;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
-.submenu-active .submenu {
+.submenu li a {
+  color: #0D0D61;
+  padding: 10px;
+}
+
+.submenu li a:hover {
+  background-color: #fff;
+}
+
+.dropdown:hover .submenu {
+  display: flex;
+}
+
+/* ---------- Responsive Design ---------- */
+@media only screen and (max-width: 640px) {
+  .toggle {
     display: block;
-}
+    background-color: #454561;
+  }
 
-.has-submenu > a::after {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 900;
-    content: " <i class="fa-solid fa-caret-down"></i>";
-    padding-left: 5px;
-}
-.subitem a {
-    padding: 10px 15px;
+  .logo {display: none;}
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding-left: 0;
+  }
 
-}
+  #menu-toggle:checked + .toggle + .menu {
+    display: flex;
+  }
 
-.submenu-active {
-    background-color: #111;
-    border-radius: 3px;
-}
 
-.item.submenu-active .submenu {
+  .menu li {
+    text-align: left;
+    border-top: 1px solid #666;
+    padding: 10px 20px;
+  }
+
+  .menu li a {
+    color: white;
+    padding: 10px 0;
+  }
+
+  
+.dropdownarrow { display: inline-block; text-align: right; padding-left: 15px; 
+ }
+
+  .dropdown:hover {display: block;
+    background-color: #fff;}
+
+  .submenu {
+    display: none;
+    background-color: #666688;
+    position: static;
+    box-shadow: none;
+    position: static;
+    text-align: center;
+  }
+
+  .dropdown:hover .submenu, 
+  .dropdown:focus-within .submenu{
     display: block;
-}
-
-/* Desktop Menu */
-@media all and (min-width: 960px) {
-    .item{
-        order: 1;
-        position: relative;
-        display: block;
-        width: auto;
-    }
-}
-.button {
-    order: 2;
-}
-
-.submenu-active .submenu {
-    display: block;
+    background-color: #666688;
+    color: black;
     position: absolute;
-    left: 0;
-    top: 68px;
-    background-color: #a590b1;
-}
+    width: 366px;
 
-.toggle {
-    display:block;
-}
-
-.submenu-active {
-    border-radius: 0;
+  }
 }
