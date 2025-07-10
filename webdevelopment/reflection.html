@@ -6,31 +6,29 @@
             
                <link rel="stylesheet" type="text/css" href="style.css">
  <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        
 <link rel="stylesheet" type="text/css" href="navRESPONSIVETEST.css">
 </head>
 <body class="body">
-      
-<nav class="nav">
-  
-    
-<ul class="menu">
-    <li class="logo"><a href="">Jumping into Geometry!</a></li>
-    <li class="item"> <a href="index.html">Home</a></li>
-    <li class="item"><a href="about.html">About</a></li>
-    <li class="item has-submenu">
-        <a tabindex="0"> Let's Learn!</a>
-        <ul class="submenu">
-            <li class="subitem"><a href="link1">Goal1</a></li>
-            <li class="subitem"><a href="link2">Goal2</a></li>
-            <li class="subitem"><a href="link3">Goal3</a></li>
-        </ul>
+<nav>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="toggle">&#9776;</label>
+  <ul class="menu">
+    <li class="logo"><a href="#">Jumping into Geometry!</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="#">Let's Learn!<label for="submenu-toggle" class="dropdownarrow">&#9660;</label></a> 
+      <ul class="submenu">
+        <li class="subitem"><a href="link1">Goal1</a></li>
+        <li class="subitem"><a href="link2">Goal2</a></li>
+        <li class="subitem"><a href="link3">Goal3</a></li>
+      </ul>
     </li>
-    <li class="item"><a href="reflection.html">Resources & References</a></li>
-    <li class="item"><a href="contact">Contact</a></li>
-    <li class="toggle"><a href="#">&#9776;</a></li>
-    </ul> 
-    </nav>
+    <li><a href="reflection.html">Resources & References</a></li>
+    <li><a href="contact">Contact</a></li>
+  </ul>
+</nav>
 <!-- This is the main content of my site -->
     <main><header>
         
@@ -92,13 +90,7 @@
         
         </div>
 </div>
-
-   
-     
-   
-    
-
-</main><script src="responsivetest.js"></script> 
+</main>
 <footer>Alison McAleer <a href="contactme"> ampdp@umsystem.edu</a> Copyright 2025 Alison McAleer </footer>
 </body>
 </html>
