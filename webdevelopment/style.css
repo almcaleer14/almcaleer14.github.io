@@ -116,6 +116,23 @@ background-color: #c3bcbd; border-radius: 15px;
 text-wrap: wrap;
 overflow: auto;}
 
+
+.icon {height: 40px;
+width: 30px;}
+
+.iconbig { width: 0;
+  position: absolute;
+  -webkit-transition: width 0.3s linear 0s;
+  transition:width 0.3s linear 0s;
+  z-index: 10;
+
+}
+
+.icon:hover + .iconbig {
+  height: 60px;
+  width: 50px;
+}
+
 @media screen and (max-width:640px) {
     .container {width: 100%;}
     .quote-box {width: 70%;}
