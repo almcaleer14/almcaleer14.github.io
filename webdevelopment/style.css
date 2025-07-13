@@ -43,13 +43,14 @@ font-family: fredoka;
 
 
 p {
-    text-align: center;
-    color: #454561;
+    text-align: left;
     display: block;
     padding: 10px 20px;
     margin: 20px auto;
-    background-color: #a590b1 ;
+   background-color: #c3bcbd ;
     border-radius: 15px;
+    font-size: 18px;
+    line-height: 2;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 
 .p2 {text-align: center;
@@ -78,12 +79,18 @@ font-size: ;}
     margin: 20px auto;
     background-color: #c3bcbd ;
     border-radius: 15px;
-    width: 500px; height: auto ;
+    width: 600px; height: auto ;
     text-align: left;
     overflow:auto;
     text-wrap: wrap;
 }
 
+.outer-flex-container {
+   display: flex; /* Makes the parent a flex container */
+   flex-direction: row; /* Arranges flex items (your two .flex-container divs) horizontally */
+   justify-content: space-around;
+
+}
 .flex-container {display: flex;           
   gap: 20px;               
   align-items: center;        
@@ -92,13 +99,17 @@ font-size: ;}
   flex-wrap: wrap;
 margin-top: auto;
 width: auto;
-
+text-align: left;
+margin-right: 10px;
+margin-left: 10px;
 }
 
 .img {width:300px;
 height: 300px;
 object-fit: cover;
-border-radius: 20px;}
+border-radius: 20px;
+align-items: center;
+}
 
 .quotes {
     display: block;
@@ -110,12 +121,27 @@ font-weight: bolder;
 text-align: left;
 margin: 0;}
 
-.quote-box {max-width: 420px;
+.quote-box {max-width: 600px;
 padding: 10px;
 background-color: #c3bcbd; border-radius: 15px;
 text-wrap: wrap;
-overflow: auto;}
+overflow: auto;
+height: 500px;
+line-height: 2;
+text-align: left;
+padding: 20px;
+margin-top: 20px;
+margin-left: 10px;
+margin-right: 10px;
+}
 
+.image {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.li {text-align: left !important; text-overflow: wrap;}
 
 .icon {height: 40px;
 width: 30px;}
@@ -139,14 +165,18 @@ width: 30px;}
     .img {width: fit-content;}
 }
 
+
 /*Print Stylesheet*/
 @media print {
-    * {
+   
+  
+  
+  * {
     background: transparent !important;
     color: #000 !important ;
     box-shadow: none !important;
     text-shadow: none !important;
-    font-family: serif !important;
+    font-family: fredoka !important;
     line-height: 1 !important;
     line-break: none !important;
     font-size: 12px !important;
