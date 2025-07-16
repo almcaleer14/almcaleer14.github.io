@@ -228,6 +228,25 @@ th, td {
   padding: 10px;
 }
 
+table tr:first-child {
+  background-color: pink;
+}
+
+table tr:last-child {
+  background-color: pink !important;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #c3bcbd
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff; 
+}
+
+
+
+
 img {
   height: 60px;
   width: 50px;
