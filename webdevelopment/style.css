@@ -16,7 +16,7 @@ font-weight: bolder;
 font-size: 70px;
  display: block;
     padding: 10px 20px;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 15px;
 width: fit-content;}
 
@@ -45,12 +45,12 @@ font-family: fredoka;
 p {
     text-align: left;
     display: block;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 20px auto;
    background-color: #c3bcbd ;
-    border-radius: 15px;
+   border-radius: 8px;
     font-size: 18px;
-    line-height: 2;
+    line-height: 1.5;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 
 .p2 {text-align: center;
@@ -79,11 +79,15 @@ font-size: ;}
     margin: 20px auto;
     background-color: #c3bcbd ;
     border-radius: 15px;
-    width: 600px; height: auto ;
+    width: 800px; height: auto ;
     text-align: left;
     overflow:auto;
     text-wrap: wrap;
+    background-color: #c3bcbd;
+line-height: 2;
 }
+
+.ul {align-items: center;}
 
 .outer-flex-container {
    display: flex; /* Makes the parent a flex container */
@@ -104,11 +108,36 @@ margin-right: 10px;
 margin-left: 10px;
 }
 
-.img {width:300px;
-height: 300px;
-object-fit: cover;
-border-radius: 20px;
-align-items: center;
+.section {
+  background: #cccccc;
+  font-family: fredoka;
+  padding: 2rem;
+  margin: 1rem 0;
+  max-width: 1100px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+.subsection {
+  background: #c3bcbd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+
+.img {
+  text-align: center;
+  width: 100%;
+}
+
+.img img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .quotes {
@@ -140,7 +169,17 @@ margin-right: 10px;
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.ol {
+  text-align: left;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 20px auto;
+  background-color: #c3bcbd;
+  border-radius: 15px;
+  font-size: 35px;
+}
 .li {text-align: left !important; text-overflow: wrap;}
 
 .icon {height: 40px;
@@ -165,6 +204,39 @@ width: 30px;}
     .img {width: fit-content;}
 }
 
+
+
+
+
+table{
+width:1000px;
+background-color: #c3bcbd;
+margin-left: auto;
+margin-right: auto;
+}
+
+th {
+  text-align: center;
+}
+
+table, th, td {
+  border: 3px solid #0D0D61;
+border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+img {
+  height: 60px;
+  width: 50px;
+}
+
+.faceverticeedge {
+  height: 150px;
+  width: 250px;
+}
 
 /*Print Stylesheet*/
 @media print {
