@@ -334,6 +334,14 @@ tbody tr:nth-child(even) {
   align-self: center;
 }
 
+.video-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 20px;
+}
+
 @media screen and (max-width:640px) {
   .container {width: 100%;}
   .quote-box {width: 70%;}
