@@ -55,7 +55,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 .p2 {text-align: center;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: ;}
+}
 
 .intro::first-letter {
     font-style: italic;
@@ -227,7 +227,6 @@ margin-right: 10px;
   font-size: 35px;
 }
 .li {text-align: left !important; 
-  text-overflow: wrap;
 line-height: 1.5 !important;
 }
 
@@ -473,7 +472,6 @@ img {
     text-shadow: none !important;
     font-family: fredoka !important;
     line-height: 1 !important;
-    line-break: none !important;
     font-size: 12px !important;
     }
 
@@ -514,5 +512,3 @@ img {
     display: none;
   }
 }
-
-
