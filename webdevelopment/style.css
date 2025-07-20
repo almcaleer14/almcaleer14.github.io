@@ -325,7 +325,14 @@ tbody tr:nth-child(even) {
   height: auto;
 }
 
-
+#resumevideo {
+  width: 560px;
+  height: 315px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  align-self: center;
+}
 
 @media screen and (max-width:640px) {
   .container {width: 100%;}
