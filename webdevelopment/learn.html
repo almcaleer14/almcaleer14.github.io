@@ -9,11 +9,8 @@
 <head>
                <meta charset="utf-8">
                <title>Let's Learn!</title>
-            <link rel="icon" href="favicon.ico" type="image/x-icon">
-             <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
                <link rel="stylesheet" href="style.css">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-           
 <link rel="stylesheet" type="text/css" href="navRESPONSIVETEST.css">
 </head>
 <body class="body">
@@ -21,15 +18,15 @@
   <input type="checkbox" id="menu-toggle">
   <label for="menu-toggle" class="toggle">&#9776;</label>
   <ul class="menu">
-    <li class="logo"><a href="#">Jumping into Geometry!</a></li>
+    <li class="logo">Jumping into Geometry!</li>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li class="dropdown">
-      <a href="learn.html">Let's Learn!</a> <label id="submenu-toggle" class="dropdownarrow">&#9660;</label>
-      <ul class="submenu">
-        <li class="subitem"><a href="#2Dshapes">2D Shapes</a></li>
-        <li class="subitem"><a href="#3Dshapes">3D Figures</a></li>
-        <li class="subitem"><a href="#comparison">2D vs. 3D</a></li>
+     <a href="learn.html">Let's Learn!</a> <label for="submenu-toggle" class="dropdownarrow">&#9660;</label>
+     <ul class="submenu">
+        <li class="subitem"><a href="learn.html#2Dshapes">2D Shapes</a></li>
+        <li class="subitem"><a href="learn.html#3Dshapes">3D Figures</a></li>
+        <li class="subitem"><a href="learn.html#comparison">2D vs. 3D</a></li>
       </ul>
     </li>
     <li><a href="reflection.html">Resources & References</a></li>
@@ -40,19 +37,24 @@
 <main>
   <header> <h1 class="h1">Let's Learn Geometry!</h1></header>
 <div class="flex-container">
-  <section id="2dshapes" class="section">
-  <h2 class="h1">2D Shapes</h2>
+  
+<div class="section">
+    <h2>Goals of this site:</h2>
+<ol>
+    <li> Students will be able to name 2D shapes. </li>
+<li>Students will be able to name 3D figures. </li>
+<li>Students will be able to tell the difference between 2D and 3D figures due to the differences in attributes.</li> 
+</ol></div>
+<div class="section"><h2 class="h1">2D Shapes</h2>
   <p>2D shapes are flat shapes. Think of it like a piece of paper, flat! There are two main types of shapes; polygons and non-polygons.</p>
- <div class="subsection">
-  <h2 class="h2"> Polygons</h2>
+ <h2 class="h2"> Polygons</h2>
          <p>
             Polygons are 2D shapes that have straight sides which are connected creating vertices.
             The main types of polygons include triangles, quadrilaterals, (including square and rectangles),
             pentagon, hexagon.
          </p>
         
-        </div>
-<table>
+         <table >
   <caption>Polygons</caption>
   <thead>
     <tr>
@@ -88,18 +90,8 @@
   </tbody>
 </table>
 
-         <div class="subsection">
-  <h2 class="h2"> Non-Polygons</h2>
-         <p>A shape that is either not connected by their side or has curved sides.
-            <br> An example is a circle. A circle is connected, <strong>HOWEVER</strong> it is curved and does <strong>NOT</strong> have straight sides.</p>
-
-<div class="img">
-           <img src="5.png" alt="circle">
-</div></div>
-
-</section>
-<section id="3Dshapes" class="section">
-  <h2 class="h1">3D Figures</h2>
+</div>
+    <div class="section"><h2 class="h1">3D Figures</h2>
   <p>
 3D figures are quite different from 2D. We talked about 2D shapes being like paper, flat.
  Well 3D, or 3 dimensional, figures can be held, tossed and you can see all the sides! <br><br>
@@ -114,7 +106,7 @@
 </div>
 
 
-<table>
+<table class="table" id="table2">
   <caption>3D Figures</caption>
   <thead>
     <tr>
@@ -157,23 +149,37 @@
     </tr>
   </tbody>
 </table>
-</section>
-<section id="comparison" class="section">
-  <h2 class="h1">2D vs. 3D shapes</h2>
-   <h2 class="h1">REMEMBER</h2> 
-   <div class="ol">
+
+</div>
+
+<div class="section">
+ <h2 >2D vs. 3D shapes<br>REMEMBER</h2>
+  
+  <h3 class="h3">When we compare 2D shapes to 3D figures there are some key differences to remember: </h3>
+  
+  <div class="ol">
    <ol>
         <li>2D shapes are flat!</li>
         <li>2D shapes do not have depth.</li>
         <li>3D figures have faces, edges, and/or vertices.</li>
         <li>3D figures have length, width, depth.</li>
-    </ol></div>
-</section>
-  </div>
-  </main>
-  <footer>Alison McAleer <a href="contactme"><img class="icon" src="favicon.ico" alt="favicon" style="width: 20px; height: 20px;">
-  <img class="iconbig" src="favicon.ico" alt="favicon" style="width: 20px; height: 20px;">  
-ampdp@umsystem.edu</a> Copyright 2025 Alison McAleer <img class="icon" src="favicon-16x16.png" alt="favicon" style="width: 20px; height: 20px;"> <img class="iconbig" src="favicon-16x16.png" alt="favicon" style="width: 20px; height: 20px;">1+888-888-8888 </footer>
+    </ol>
+  <div class="img">
+           <img src="2dand3d.jpg" alt="circle">
 
-  </body>
-  </html>
+  </div>
+
+</div>
+</div>
+      </div>
+  </main>
+<footer>Alison McAleer <br>
+  <img class="icon" src="icons8-email-24.png" alt="emailicon" style="width: 20px; height: 20px;"><img class="iconbig" src="icons8-email-24.png" alt="emailicon">
+ 
+  <a href="contact.html"> ampdp@umsystem.edu  </a>
+  <br>
+ <img class="icon" src="icons8-phone-50.png" alt="phone" style="width: 20px; height: 20px;"> <img class="iconbig" src="icons8-phone-50.png" alt="phone"> 1+888-888-8888 
+<br><strong> Copyright 2025, Alison McAleer</strong> 
+</footer>
+</body>
+</html> 

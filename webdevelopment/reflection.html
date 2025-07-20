@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
-               <title>Reflection</title>
+               <title>Resources</title>
             
                <link rel="stylesheet" type="text/css" href="style.css">
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,15 +14,15 @@
   <input type="checkbox" id="menu-toggle">
   <label for="menu-toggle" class="toggle">&#9776;</label>
   <ul class="menu">
-    <li class="logo"><a href="#">Jumping into Geometry!</a></li>
+    <li class="logo">Jumping into Geometry!</li>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li class="dropdown">
      <a href="learn.html">Let's Learn!</a> <label for="submenu-toggle" class="dropdownarrow">&#9660;</label>
      <ul class="submenu">
-        <li class="subitem"><a href="learn.html/#2Dshapes">2D Shapes</a></li>
-        <li class="subitem"><a href="learn.html/#3Dshapes">3D Figures</a></li>
-        <li class="subitem"><a href="learn.html/#comparison">2D vs. 3D</a></li>
+        <li class="subitem"><a href="learn.html#2Dshapes">2D Shapes</a></li>
+        <li class="subitem"><a href="learn.html#3Dshapes">3D Figures</a></li>
+        <li class="subitem"><a href="learn.html#comparison">2D vs. 3D</a></li>
       </ul>
     </li>
     <li><a href="reflection.html">Resources & References</a></li>
@@ -33,21 +33,14 @@
     <main><header>
         
         <h1 class="h1">Jumping into Geometry! </h1></header>
-     <div class="flex-container"><div class="quote-box">
-        <h2 class="h2"> Resources</h2>
-        <ul class="ul">
-        <li><a href="https://www.math-salamanders.com/2d-shapes-worksheets.html"> Math Salamanders' Worksheets </a> </li> 
-        <li><a href="https://www.math-salamanders.com/3d-shapes-worksheets.html"> 3D Worksheets by Math Salamanders</a> </li>
-        <li><a href="http://www.splashlearn.com/math-vocabulary/geometry/3-dimensional"> Splashlearn 3D</a></li>
-        <li><a href="https://www.mathsisfun.com/geometry/polygons.html">Math is Fun! - Polygons</a></li>
-        </ul>
-       </div></div>
-        
+     <div class="flex-container">
       
-        <h3 class="h3">Helpful Videos from other Sources on 2D Shapes & 3D figures</h3>
-          <div class="flex-container"> <p class="intro">These videos can help your student learn more about 2D & 3D shapes.
-    </p></div>
-    <div class="flex-container">
+       <section id="videos" class="section">
+        <h2>Helpful Videos from other Sources on 2D Shapes & 3D figures</h2>
+    <h3 class="h3">These videos can help your student learn more about 2D & 3D shapes.</h3>
+
+    <div class="video-container">
+  
     <iframe 
   width="560" 
   height="315" 
@@ -58,22 +51,41 @@
   referrerpolicy="strict-origin-when-cross-origin" 
   allowfullscreen>
 </iframe>
-        <iframe 
+</div>
+<div class="video-container">
+  
+    <iframe 
   width="560" 
   height="315" 
-  src="https://www.youtube.com/embed/r845CIhu5Ok?si=Zj9lLYaLEjFxGHrs"
+  src="https://www.youtube.com/embed/3DShapesFacesEdgesVerticesGeometryForKids?si=27uQZGw1P5B3IpYc" 
+  id="3dshapesvideo"
+  title="YouTube video player" 
   style="border: none;" 
-  allowfullscreen
-  referrerpolicy="strict-origin-when-cross-origin"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe></div>  
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen>
+<br></iframe>
+</div>
+</section>
 <br>
 <br>
-<div class="flex-container">
       
-     <div class="quote-box">
+        <div class="purpose">
+        <h2 class="h2"> Resources</h2>
+        <ul class="ul">
+        <li><a href="https://www.math-salamanders.com/2d-shapes-worksheets.html"> Math Salamanders' Worksheets </a> </li> 
+        <li><a href="https://www.math-salamanders.com/3d-shapes-worksheets.html"> 3D Worksheets by Math Salamanders</a> </li>
+        <li><a href="http://www.splashlearn.com/math-vocabulary/geometry/3-dimensional"> Splashlearn 3D</a></li>
+        <li><a href="https://www.mathsisfun.com/geometry/polygons.html">Math is Fun! - Polygons</a></li>
+        </ul>
+       </div>
+     
+     
+<section id="references" class="section">
+      
+ 
           <h2 class="h2">References</h2>
-        <p class="p2">Here are the references and sources I used to help make my site!</p><br>
+        <h3 class="h3"> Here are the references and sources I used to help make my site!<br> Feel free to check them out too!</h3><br>
            <ol>
           <li class="li">2D and 3D Shapes for Kids | Geometry for Kids. YouTube, 7 Dec. 2022,  www.youtube.com/watch?v=gk_u1xr7jQg .  </li>
           
@@ -84,13 +96,23 @@
            <li class="li"> “Polygons.” Math Is Fun, edited by Rod Pierce, 2024,<a href="www.mathsisfun.com/geometry/polygons.html"> www.mathsisfun.com/geometry/polygons.html. </a></li>
            
            <li class="li">"Math Salamanders." The Math Salamanders, <a href="www.math-salamanders.com">www.math-salamanders.com</a>, Accessed 29 June 2025.</li>
-           <li class="li"> LampoFilm. “3D Shapes Faces Edges Vertices – Geometry for Kids.” YouTube, uploaded by LampoFilm, 29 Apr. 2020 https://youtu.be/r845CIhu5Ok?si=27uQZGw1P5B3IpYc </li></ol>
-
-
+           <li class="li"> LampoFilm. “3D Shapes Faces Edges Vertices – Geometry for Kids.” YouTube, uploaded by LampoFilm, 29 Apr. 2020 https://youtu.be/r845CIhu5Ok?si=27uQZGw1P5B3IpYc </li>
+        <li class="li"> Icons8. (n.d.). 'Phone icon'. Icons8.<a target="_blank" href="https://icons8.com/icon/b7F1F6mHPgxh/phone"> https://icons8.com/icon/b7F1F6mHPgxh/phone </a></li>
+<li class="li"> Icons8. (n.d.). 'Email icon'. Icons8.<a target="_blank" href="https://icons8.com/icon/85500/email"> https://icons8.com/icon/85500/email </a></li>
+</ol>
+</section>
         
-        </div>
+        
 </div>
 </main>
-<footer>Alison McAleer <a href="contactme"> ampdp@umsystem.edu</a> Copyright 2025 Alison McAleer </footer>
+<footer>Alison McAleer <br>
+  <img class="icon" src="icons8-email-24.png" alt="emailicon" style="width: 20px; height: 20px;"><img class="iconbig" src="icons8-email-24.png" alt="emailicon">
+ 
+  <a href="contact.html"> ampdp@umsystem.edu  </a>
+  <br>
+ <img class="icon" src="icons8-phone-50.png" alt="phone" style="width: 20px; height: 20px;"> <img class="iconbig" src="icons8-phone-50.png" alt="phone"> 1+888-888-8888 
+<br><strong> Copyright 2025, Alison McAleer</strong> 
+</footer>
+
 </body>
-</html>
+</html> 
