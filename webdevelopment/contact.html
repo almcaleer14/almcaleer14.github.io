@@ -9,7 +9,7 @@
 <head>
                <meta charset="utf-8">
                <title>Contact</title>
-            
+             <link rel="shortcut icon" type="image/x-icon" href="icons8-frog-48.png">
 <link rel="stylesheet" href="style.css">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
            
@@ -38,29 +38,30 @@
  <!-- This is the main content of my site -->
 <main>
   <header> <h1 class="h1">Contact Me</h1></header>
-<div class="flex-container">
-    <div class="quote-box">
+
+    <div class="quote-box" id="contactme">
         <p>If you have any questions, comments, or feedback about the site, please reach out to me using the contact information below. I would love to hear from you!</p>
 <h2 class="h2">Contact Information</h2>
 
 <h3> Alison McAleer</h3>
 Email:<a href="mailto:ampdp@umsystem.edu?Subject=Here%20is%20my%20subject">  ampdp@umsystem.edu </a>
-<form action="mailto:ampdp@umsystem.edu?Subject=Here%20is%20my%20subject" method="POST" enctype="text/plain">
+<form class="form"   action="mailto:ampdp@umsystem.edu?Subject=Here%20is%20my%20subject" method="POST" enctype="text/plain">
   <label for="First">First Name:<br>
-  <input type="text" id="First" name="First" placeholder="First Name" required></label><br><br>
+  <input type="text" size="40px"  id="First" name="First" placeholder="First Name"    required></label><br><br>
 <label for="Last">Last Name:<br>
   <input type="text" id="Last" name="Last" placeholder="Last Name" required></label><br><br>
 
   <label for="subject">Subject:<br>
   <input type="text" id="subject" name="subject" placeholder="subject" required></label><br><br>
 <label for="email">Email:<br>
-  <input type="text" id="email" name="email" placeholder="email" required></label><br><br>
+  <input type="text"  id="email" name="email" placeholder="email" required></label><br><br>
   <label for="message">Message:<br>
   <textarea id="message" name="message" placeholder="Type Text Here" rows="10" required></textarea></label><br><br>
 <button type="reset">Reset</button>
   <button type="submit">Submit</button>
 </form>
-</div></div>
+</div>
+
   </main>
 <footer>Alison McAleer <br>
   <img class="icon" src="icons8-email-24.png" alt="emailicon" style="width: 20px; height: 20px;"><img class="iconbig" src="icons8-email-24.png" alt="emailicon">
