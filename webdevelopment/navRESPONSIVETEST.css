@@ -136,7 +136,7 @@ nav {
 .dropdownarrow { display: inline-block; text-align: right; padding-left: 15px; 
  }
 
-  .dropdown:hover {display: block;
+  .dropdown:hover {display: none;
     background-color: #fff;}
 
   .submenu {
